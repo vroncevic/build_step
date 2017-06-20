@@ -31,5 +31,5 @@ it under the same terms as Bash itself, either Bash version 4.2.47 or,
 at your option, any later version of Bash 4 you may have available.
 
 ![alt tag](https://raw.githubusercontent.com/vroncevic/build_step/master/bash_logo.png)
-![alt tag](https://raw.githubusercontent.com/vroncevic/build_step/master/linux_logo.jpg)
+![alt tag](https://raw.githubusercontent.com/vroncevic/build_step/master/linux_logo.png)
 
