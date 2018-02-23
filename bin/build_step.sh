@@ -68,7 +68,7 @@ TOOL_NOTIFY="false"
 # CF="main.c" OF="hello_world"
 # __build_step "$CF" "$OF"
 #
-function __build_step() {
+function __build_step {
     local CF=$1 OF=$2
     if [[ -n "${CF}" && -n "${OF}" ]]; then
         local FUNC=${FUNCNAME[0]} MSG="None"
