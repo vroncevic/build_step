@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @brief   build_step build native App/Tool in steps
-# @version ver.1.0
+# @version ver.1.0.0
 # @date    Wed Jun  7 22:25:23 CEST 2017
 # @company None, free software to use 2017
 # @author  Vladimir Roncevic <elektron.ronca@gmail.com>
