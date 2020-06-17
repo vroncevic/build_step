@@ -6,10 +6,9 @@ BUILD_STEP
 
  self
 
+**build_step** is shell tool for analyzing build products.
 
-build_step is shell tool for analyze build products.
-
-Developed in bash code: 100%.
+Developed in `bash <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ code: **100%**.
 
 The README is used to introduce the tool and provide instructions on
 how to install the tool, any machine dependencies it may have and any
@@ -32,7 +31,7 @@ Navigate to release `page`_ download and extract release archive.
 
 .. _page: https://github.com/vroncevic/build_step/releases
 
-To install this set of modules type the following:
+To install **build_step** type the following:
 
 .. code-block:: bash
 
@@ -44,17 +43,16 @@ To install this set of modules type the following:
 
 DEPENDENCIES
 -------------
-This tool requires these other modules and libraries:
 
-.. code-block:: bash
-
-   sh_util https://github.com/vroncevic/sh_util
+**build_step** requires next modules and libraries:
+    sh_util `https://github.com/vroncevic/sh_util <https://github.com/vroncevic/sh_util>`_
 
 SHELL TOOL STRUCTURE
 ---------------------
-build_step is based on MOP.
 
-Shell tool structure:
+**build_step** is based on MOP.
+
+Code structure:
 
 .. code-block:: bash
 
@@ -78,7 +76,7 @@ COPYRIGHT AND LICENCE
 .. |License: Apache 2.0| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
    :target: https://opensource.org/licenses/Apache-2.0
 
-Copyright (C) 2018 by https://vroncevic.github.io/build_step
+Copyright (C) 2017 by `vroncevic.github.io/build_step <https://vroncevic.github.io/build_step>`_
 
 This tool is free software; you can redistribute it and/or modify it
 under the same terms as Bash itself, either Bash version 4.2.47 or,
