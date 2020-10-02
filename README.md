@@ -4,7 +4,7 @@
 
 Developed in **[bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))** code: **100%**.
 
-[![build_step shell checker](https://github.com/vroncevic/build_step/workflows/build_step%20shell%20checker/badge.svg)] (https://github.com/vroncevic/build_step/actions?query=workflow%3A%22build_step+shell+checker%22)
+[![build_step shell checker](https://github.com/vroncevic/build_step/workflows/build_step%20shell%20checker/badge.svg)](https://github.com/vroncevic/build_step/actions?query=workflow%3A%22build_step+shell+checker%22)
 
 The README is used to introduce the tool and provide instructions on
 how to install the tool, any machine dependencies it may have and any
@@ -43,7 +43,7 @@ cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.1.0/
 
 Or You can use docker to create image/container.
 
-[![build_step docker checker](https://github.com/vroncevic/build_step/workflows/build_step%20docker%20checker/badge.svg)] (https://github.com/vroncevic/build_step/actions?query=workflow%3A%22build_step+docker+checker%22)
+[![build_step docker checker](https://github.com/vroncevic/build_step/workflows/build_step%20docker%20checker/badge.svg)](https://github.com/vroncevic/build_step/actions?query=workflow%3A%22build_step+docker+checker%22)
 
 ### Usage
 
