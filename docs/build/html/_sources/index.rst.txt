@@ -5,6 +5,11 @@ build_step
 
 Developed in `bash <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ code: **100%**.
 
+|GitHub shell checker|
+
+.. |GitHub shell checker| image:: https://github.com/vroncevic/build_step/workflows/build_step%20shell%20checker/badge.svg
+   :target: https://github.com/vroncevic/build_step/actions?query=workflow%3A%22build_step+shell+checker%22
+
 The README is used to introduce the tool and provide instructions on
 how to install the tool, any machine dependencies it may have and any
 other information that should be provided before the tool is installed.
@@ -41,6 +46,13 @@ To install **build_step** type the following:
    cp -R ~/sh_tool/bin/   /root/scripts/build_step/ver.1.0/
    cp -R ~/sh_tool/conf/  /root/scripts/build_step/ver.1.0/
    cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.1.0/
+
+Or You can use Docker to create image/container.
+
+|GitHub docker checker|
+
+.. |GitHub docker checker| image:: https://github.com/vroncevic/build_step/workflows/build_step%20docker%20checker/badge.svg
+   :target: https://github.com/vroncevic/build_step/actions?query=workflow%3A%22build_step+docker+checker%22
 
 Dependencies
 -------------
