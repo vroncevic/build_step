@@ -1,10 +1,5 @@
-BUILD_STEP
+build_step
 -----------
-
-.. toctree::
- :hidden:
-
- self
 
 **build_step** is shell tool for analyzing build products.
 
@@ -25,8 +20,14 @@ other information that should be provided before the tool is installed.
 .. |Documentation Status| image:: https://readthedocs.org/projects/build_step/badge/?version=latest
    :target: https://build_step.readthedocs.io/projects/build_step/en/latest/?badge=latest
 
-INSTALLATION
+.. toctree::
+    :hidden:
+
+    self
+
+Installation
 -------------
+
 Navigate to release `page`_ download and extract release archive.
 
 .. _page: https://github.com/vroncevic/build_step/releases
@@ -41,13 +42,13 @@ To install **build_step** type the following:
    cp -R ~/sh_tool/conf/  /root/scripts/build_step/ver.1.0/
    cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.1.0/
 
-DEPENDENCIES
+Dependencies
 -------------
 
 **build_step** requires next modules and libraries:
     sh_util `https://github.com/vroncevic/sh_util <https://github.com/vroncevic/sh_util>`_
 
-SHELL TOOL STRUCTURE
+Shell tool structure
 ---------------------
 
 **build_step** is based on MOP.
@@ -65,7 +66,7 @@ Code structure:
    └── log/
        └── build_step.log
 
-COPYRIGHT AND LICENCE
+Copyright and licence
 ----------------------
 
 |License: GPL v3| |License: Apache 2.0|
@@ -78,7 +79,7 @@ COPYRIGHT AND LICENCE
 
 Copyright (C) 2017 by `vroncevic.github.io/build_step <https://vroncevic.github.io/build_step>`_
 
-This tool is free software; you can redistribute it and/or modify it
+**build_step** is free software; you can redistribute it and/or modify it
 under the same terms as Bash itself, either Bash version 4.2.47 or,
 at your option, any later version of Bash 4 you may have available.
 
