@@ -58,6 +58,7 @@ TOOL_NOTIFY="false"
 # @params Values required source code file name and output file name
 # @retval Function __build_step exit with integer value
 #            0   - tool finished with success operation
+#            127 - run tool script as root user from cli
 #            128 - missing argument(s) from cli
 #            129 - failed to load tool script configuration from files
 #            130 - check input source code file
@@ -144,12 +145,7 @@ function __build_step {
 #
 # @brief   Main entry point of script tool
 # @params  Values required source code file name and output file name
-# @exitval Script tool build_step exit with integer value
-#            0   - tool finished with success operation
-#            127 - run tool script as root user from cli
-#            128 - missing argument(s) from cli
-#            129 - failed to load tool script configuration from files
-#            130 - check input source code file
+# @exitval Script tool build_step exit with integer value 0 - 130
 #
 printf "\n%s\n%s\n\n" "${BUILD_STEP_TOOL} ${BUILD_STEP_VERSION}" "`date`"
 check_root
