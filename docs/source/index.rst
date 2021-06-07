@@ -41,11 +41,11 @@ To install **build_step** type the following:
 
 .. code-block:: bash
 
-   tar xvzf build_step-x.y.z.tar.gz
-   cd build_step-x.y.z
-   cp -R ~/sh_tool/bin/   /root/scripts/build_step/ver.1.0/
-   cp -R ~/sh_tool/conf/  /root/scripts/build_step/ver.1.0/
-   cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.1.0/
+   tar xvzf build_step-x.y.tar.gz
+   cd build_step-x.y
+   cp -R ~/sh_tool/bin/   /root/scripts/build_step/ver.x.y/
+   cp -R ~/sh_tool/conf/  /root/scripts/build_step/ver.x.y/
+   cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.x.y/
 
 Or You can use Docker to create image/container.
 
@@ -70,7 +70,7 @@ Code structure:
 
 .. code-block:: bash
 
-   .
+   sh_tool/
    ├── bin/
    │   └── build_step.sh
    ├── conf/

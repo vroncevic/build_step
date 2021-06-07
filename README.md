@@ -1,3 +1,5 @@
+<img align="right" src="https://raw.githubusercontent.com/vroncevic/build_step/dev/docs/build_step_logo.png" width="25%">
+
 # Build step tool for x86-64 and GCC4.9.2
 
 **build_step** is shell tool for analyzing build products.
@@ -32,11 +34,11 @@ Navigate to release **[page](https://github.com/vroncevic/build_step/releases)**
 To install **build_step** type the following:
 
 ```
-tar xvzf build_step-x.y.z.tar.gz
-cd build_step-x.y.z
-cp -R ~/sh_tool/bin/   /root/scripts/build_step/ver.1.0/
-cp -R ~/sh_tool/conf/  /root/scripts/build_step/ver.1.0/
-cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.1.0/
+tar xvzf build_step-x.y.tar.gz
+cd build_step-x.y
+cp -R ~/sh_tool/bin/   /root/scripts/build_step/ver.x.y/
+cp -R ~/sh_tool/conf/  /root/scripts/build_step/ver.x.y/
+cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.x.y/
 ```
 
 ![alt tag](https://raw.githubusercontent.com/vroncevic/build_step/dev/docs/setup_tree.png)
@@ -49,7 +51,7 @@ Or You can use docker to create image/container.
 
 ```
 # Create symlink for shell tool
-ln -s /root/scripts/build_step/ver.1.0/bin/build_step.sh /root/bin/build_step
+ln -s /root/scripts/build_step/ver.x.y/bin/build_step.sh /root/bin/build_step
 
 # Setting PATH
 export PATH=${PATH}:/root/bin/
@@ -69,7 +71,7 @@ build_step start
 
 Code structure:
 ```
-.
+sh_tool/
 ├── bin/
 │   └── build_step.sh
 ├── conf/
