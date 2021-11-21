@@ -33,11 +33,16 @@ other information that should be provided before the tool is installed.
 Installation
 -------------
 
+|Debian Linux OS|
+
+.. |Debian Linux OS| image:: https://raw.githubusercontent.com/vroncevic/build_step/dev/docs/debtux.png
+   :target: https://www.debian.org
+
 Navigate to release `page`_ download and extract release archive.
 
 .. _page: https://github.com/vroncevic/build_step/releases
 
-To install **build_step** type the following:
+To install **build_step** type the following
 
 .. code-block:: bash
 
@@ -57,7 +62,7 @@ Or You can use Docker to create image/container.
 Dependencies
 -------------
 
-**build_step** requires next modules and libraries:
+**build_step** requires next modules and libraries
 
 * sh_util `https://github.com/vroncevic/sh_util <https://github.com/vroncevic/sh_util>`_
 
@@ -66,15 +71,18 @@ Shell tool structure
 
 **build_step** is based on MOP.
 
-Code structure:
+Shell tool structure
 
 .. code-block:: bash
 
    sh_tool/
    ├── bin/
-   │   └── build_step.sh
+   │   ├── build_step.sh
+   │   ├── center.sh
+   │   └── display_logo.sh
    ├── conf/
    │   ├── build_step.cfg
+   │   ├── build_step.logo
    │   └── build_step_util.cfg
    └── log/
        └── build_step.log
