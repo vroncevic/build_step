@@ -6,7 +6,7 @@
 
 Developed in **[bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))** code: **100%**.
 
-[![build_step shell checker](https://github.com/vroncevic/build_step/workflows/build_step%20shell%20checker/badge.svg)](https://github.com/vroncevic/build_step/actions?query=workflow%3A%22build_step+shell+checker%22)
+[![build_step_shell_checker](https://github.com/vroncevic/build_step/actions/workflows/build_step_shell_checker.yml/badge.svg)](https://github.com/vroncevic/build_step/actions/workflows/build_step_shell_checker.yml)
 
 The README is used to introduce the tool and provide instructions on
 how to install the tool, any machine dependencies it may have and any
@@ -74,8 +74,6 @@ lrwxrwxrwx 1 root root 50 Nov 21 12:43 /root/bin/build_step -> /root/scripts/bui
 
 Or You can use docker to create image/container.
 
-[![build_step docker checker](https://github.com/vroncevic/build_step/workflows/build_step%20docker%20checker/badge.svg)](https://github.com/vroncevic/build_step/actions?query=workflow%3A%22build_step+docker+checker%22)
-
 ### Usage
 
 ```
@@ -92,13 +90,16 @@ Sun 21 Nov 2021 12:57:34 PM CET
 [check_root] Check permission for current session? [ok]
 [check_root] Done
 
-	                                           
-	 _           _ _     _       _             
-	| |__  _   _(_) | __| |  ___| |_ ___ _ __  
-	| '_ \| | | | | |/ _` | / __| __/ _ \ '_ \ 
-	| |_) | |_| | | | (_| | \__ \ ||  __/ |_) |
-	|_.__/ \__,_|_|_|\__,_| |___/\__\___| .__/ 
-	                                    |_|    
+                                                                        
+   ██              ██  ██      ██                 ██                    
+  ░██             ░░  ░██     ░██                ░██                    
+  ░██      ██   ██ ██ ░██     ░██        ██████ ██████  █████  ██████   
+  ░██████ ░██  ░██░██ ░██  ██████       ██░░░░ ░░░██░  ██░░░██░██░░░██  
+  ░██░░░██░██  ░██░██ ░██ ██░░░██      ░░█████   ░██  ░███████░██  ░██  
+  ░██  ░██░██  ░██░██ ░██░██  ░██       ░░░░░██  ░██  ░██░░░░ ░██████   
+  ░██████ ░░██████░██ ███░░██████ █████ ██████   ░░██ ░░██████░██░░░    
+  ░░░░░    ░░░░░░ ░░ ░░░  ░░░░░░ ░░░░░ ░░░░░░     ░░   ░░░░░░ ░██       
+                                                              ░░        
 	                                           
 		Info   github.io/build_step ver.2.0 
 		Issue  github.io/issue
@@ -154,10 +155,10 @@ sh_tool/
 
 ### Docs
 
-[![Documentation Status](https://readthedocs.org/projects/build_step/badge/?version=latest)](https://build_step.readthedocs.io/projects/build_step/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/build_step/badge/?version=latest)](https://build-step.readthedocs.io/projects/build_step/en/latest/?badge=latest)
 
 More documentation and info at
-* [https://build_step.readthedocs.io/en/latest/](https://build_step.readthedocs.io/en/latest/)
+* [https://build_step.readthedocs.io/en/latest/](https://build-step.readthedocs.io/en/latest/)
 * [https://www.gnu.org/software/bash/manual/](https://www.gnu.org/software/bash/manual/)
 * [https://www.gnu.org/manual/manual.en.html](https://www.gnu.org/manual/manual.en.html)
 
@@ -165,7 +166,7 @@ More documentation and info at
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Copyright (C) 2017 by [vroncevic.github.io/build_step](https://vroncevic.github.io/build_step)
+Copyright (C) 2017 - 2024 by [vroncevic.github.io/build_step](https://vroncevic.github.io/build_step)
 
 **build_step** is free software; you can redistribute it and/or modify
 it under the same terms as Bash itself, either Bash version 4.2.47 or,
