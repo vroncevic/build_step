@@ -1,6 +1,6 @@
-<img align="right" src="https://raw.githubusercontent.com/vroncevic/build_step/dev/docs/build_step_logo.png" width="25%">
-
 # Build step tool for x86-64 and GCC10.2.1
+
+<img align="right" src="https://raw.githubusercontent.com/vroncevic/build_step/dev/docs/build_step_logo.png" width="25%">
 
 **build_step** is shell tool for analyzing build products.
 
@@ -35,7 +35,7 @@ Navigate to release **[page](https://github.com/vroncevic/build_step/releases)**
 
 To install **build_step** type the following
 
-```
+```bash
 tar xvzf build_step-x.y.tar.gz
 cd build_step-x.y
 cp -R ~/sh_tool/bin/   /root/scripts/build_step/ver.x.y/
@@ -44,7 +44,8 @@ cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.x.y/
 ```
 
 Self generated setup script and execution
-```
+
+```bash
 ./build_step_setup.sh
 
 [setup] installing App/Tool/Script build_step
@@ -76,7 +77,7 @@ Or You can use docker to create image/container.
 
 ### Usage
 
-```
+```bash
 # Create symlink for shell tool
 ln -s /root/scripts/build_step/ver.x.y/bin/build_step.sh /root/bin/build_step
 
@@ -139,7 +140,8 @@ Sun 21 Nov 2021 12:57:34 PM CET
 **build_step** is based on MOP.
 
 Shell tool structure
-```
+
+```bash
 sh_tool/
 ├── bin/
 │   ├── build_step.sh
