@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @brief   build_step build native App/Tool in steps
-# @version ver.2.0
+# @version ver.3.0
 # @date    Sun 21 Nov 2021 09:26:00 AM CET
 # @company None, free software to use 2021
 # @author  Vladimir Roncevic <elektron.ronca@gmail.com>
@@ -20,20 +20,15 @@ UTIL_LOG=${UTIL}/log
 .    ${UTIL}/bin/load_conf.sh
 .    ${UTIL}/bin/load_util_conf.sh
 .    ${UTIL}/bin/progress_bar.sh
+.    ${UTIL}/bin/display_logo.sh
 
 BUILD_STEP_TOOL=build_step
-BUILD_STEP_VERSION=ver.2.0
+BUILD_STEP_VERSION=ver.3.0
 BUILD_STEP_HOME=${UTIL_ROOT}/${BUILD_STEP_TOOL}/${BUILD_STEP_VERSION}
 BUILD_STEP_CFG=${BUILD_STEP_HOME}/conf/${BUILD_STEP_TOOL}.cfg
 BUILD_STEP_UTIL_CFG=${BUILD_STEP_HOME}/conf/${BUILD_STEP_TOOL}_util.cfg
 BUILD_STEP_LOGO=${BUILD_STEP_HOME}/conf/${BUILD_STEP_TOOL}.logo
 BUILD_STEP_LOG=${BUILD_STEP_HOME}/log
-
-tabs 4
-CONSOLE_WIDTH=$(stty size | awk '{print $2}')
-
-.    ${BUILD_STEP_HOME}/bin/center.sh
-.    ${BUILD_STEP_HOME}/bin/display_logo.sh
 
 declare -A BUILD_STEP_USAGE=(
     [USAGE_TOOL]="${BUILD_STEP_TOOL}"
@@ -77,8 +72,8 @@ TOOL_NOTIFY="false"
 #
 function __build_step {
     local CF=$1 OF=$2
-    display_logo
     if [[ -n "${CF}" && -n "${OF}" ]]; then
+        display_logo "vroncevic" "${BUILD_STEP_TOOL}" "${BUILD_STEP_VERSION}" "${BUILD_STEP_LOGO}"
         local FUNC=${FUNCNAME[0]} MSG="None"
         local STATUS_CONF STATUS_CONF_UTIL STATUS
         MSG="Loading basic and util configuration!"

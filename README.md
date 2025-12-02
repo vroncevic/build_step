@@ -36,20 +36,20 @@ Navigate to release **[page](https://github.com/vroncevic/build_step/releases)**
 To install **build_step** type the following
 
 ```bash
-tar xvzf build_step-x.y.tar.gz
-cd build_step-x.y
-cp -R ~/sh_tool/bin/   /root/scripts/build_step/ver.x.y/
-cp -R ~/sh_tool/conf/  /root/scripts/build_step/ver.x.y/
-cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.x.y/
+tar xvzf build_step-3.0.tar.gz
+cd build_step-3.0
+cp -R ~/sh_tool/bin/   /root/scripts/build_step/ver.3.0/
+cp -R ~/sh_tool/conf/  /root/scripts/build_step/ver.3.0/
+cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.3.0/
 ```
 
 Self generated setup script and execution
 
 ```bash
-./build_step_setup.sh
+./build_step_setup.sh 
 
 [setup] installing App/Tool/Script build_step
-	Sun 21 Nov 2021 12:43:46 PM CET
+	Tue Dec  2 07:29:50 PM CET 2025
 [setup] clean up App/Tool/Script structure
 [setup] copy App/Tool/Script structure
 [setup] remove github editor configuration files
@@ -57,20 +57,18 @@ Self generated setup script and execution
 [setup] create symbolic link of App/Tool/Script
 [setup] done
 
-/root/scripts/build_step/ver.2.0/
-├── bin/
-│   ├── build_step.sh
-│   ├── center.sh
-│   └── display_logo.sh
-├── conf/
+/root/scripts/build_step/ver.3.0/
+├── bin
+│   └── build_step.sh
+├── conf
 │   ├── build_step.cfg
 │   ├── build_step.logo
 │   └── build_step_util.cfg
-└── log/
+└── log
     └── build_step.log
 
-3 directories, 7 files
-lrwxrwxrwx 1 root root 50 Nov 21 12:43 /root/bin/build_step -> /root/scripts/build_step/ver.2.0/bin/build_step.sh
+4 directories, 5 files
+lrwxrwxrwx 1 root root 50 Dec  2 19:29 /root/bin/build_step -> /root/scripts/build_step/ver.3.0/bin/build_step.sh
 ```
 
 Or You can use docker to create image/container.
@@ -79,14 +77,14 @@ Or You can use docker to create image/container.
 
 ```bash
 # Create symlink for shell tool
-ln -s /root/scripts/build_step/ver.x.y/bin/build_step.sh /root/bin/build_step
+ln -s /root/scripts/build_step/ver.3.0/bin/build_step.sh /root/bin/build_step
 
 # Setting PATH
 export PATH=${PATH}:/root/bin/
 
 # Start analyze build products
-build_step ver.2.0
-Sun 21 Nov 2021 12:57:34 PM CET
+build_step ver.3.0
+Tue Dec  2 07:30:18 PM CET 2025
 
 [check_root] Check permission for current session? [ok]
 [check_root] Done
@@ -102,7 +100,7 @@ Sun 21 Nov 2021 12:57:34 PM CET
   ░░░░░    ░░░░░░ ░░ ░░░  ░░░░░░ ░░░░░ ░░░░░░     ░░   ░░░░░░ ░██       
                                                               ░░        
 	                                           
-		Info   github.io/build_step ver.2.0 
+		Info   github.io/build_step ver.3.0 
 		Issue  github.io/issue
 		Author vroncevic.github.io
 
@@ -110,13 +108,13 @@ Sun 21 Nov 2021 12:57:34 PM CET
 100% [================================================]
 
 [load_conf] Loading App/Tool/Script configuration!
-[check_cfg] Checking configuration file [/root/scripts/build_step/ver.2.0/conf/build_step.cfg] [ok]
+[check_cfg] Checking configuration file [/root/scripts/build_step/ver.3.0/conf/build_step.cfg] [ok]
 [check_cfg] Done
 
 [load_conf] Done
 
 [load_util_conf] Load module configuration!
-[check_cfg] Checking configuration file [/root/scripts/build_step/ver.2.0/conf/build_step_util.cfg] [ok]
+[check_cfg] Checking configuration file [/root/scripts/build_step/ver.3.0/conf/build_step_util.cfg] [ok]
 [check_cfg] Done
 
 [load_util_conf] Done
@@ -144,9 +142,7 @@ Shell tool structure
 ```bash
 sh_tool/
 ├── bin/
-│   ├── build_step.sh
-│   ├── center.sh
-│   └── display_logo.sh
+│   └── build_step.sh
 ├── conf/
 │   ├── build_step.cfg
 │   ├── build_step.logo
@@ -168,7 +164,7 @@ More documentation and info at
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Copyright (C) 2017 - 2024 by [vroncevic.github.io/build_step](https://vroncevic.github.io/build_step)
+Copyright (C) 2017 - 2026 by [vroncevic.github.io/build_step](https://vroncevic.github.io/build_step)
 
 **build_step** is free software; you can redistribute it and/or modify
 it under the same terms as Bash itself, either Bash version 4.2.47 or,
