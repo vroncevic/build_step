@@ -46,11 +46,11 @@ To install **build_step** type the following
 
 .. code-block:: bash
 
-   tar xvzf build_step-x.y.tar.gz
-   cd build_step-x.y
-   cp -R ~/sh_tool/bin/   /root/scripts/build_step/ver.x.y/
-   cp -R ~/sh_tool/conf/  /root/scripts/build_step/ver.x.y/
-   cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.x.y/
+   tar xvzf build_step-3.0.tar.gz
+   cd build_step-3.0
+   cp -R ~/sh_tool/bin/   /root/scripts/build_step/ver.3.0/
+   cp -R ~/sh_tool/conf/  /root/scripts/build_step/ver.3.0/
+   cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.3.0/
 
 Or You can use Docker to create image/container.
 
@@ -72,9 +72,7 @@ Shell tool structure
 
    sh_tool/
    ├── bin/
-   │   ├── build_step.sh
-   │   ├── center.sh
-   │   └── display_logo.sh
+   │   └── build_step.sh
    ├── conf/
    │   ├── build_step.cfg
    │   ├── build_step.logo
@@ -93,7 +91,7 @@ Copyright and licence
 .. |License: Apache 2.0| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
    :target: https://opensource.org/licenses/Apache-2.0
 
-Copyright (C) 2017 - 2024 by `vroncevic.github.io/build_step <https://vroncevic.github.io/build_step>`_
+Copyright (C) 2017 - 2026 by `vroncevic.github.io/build_step <https://vroncevic.github.io/build_step>`_
 
 **build_step** is free software; you can redistribute it and/or modify it
 under the same terms as Bash itself, either Bash version 4.2.47 or,
