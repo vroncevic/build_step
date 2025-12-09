@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @brief   build_step build native App/Tool in steps
-# @version ver.3.0
+# @version ver.4.0
 # @date    Sun 21 Nov 2021 09:26:00 AM CET
 # @company None, free software to use 2021
 # @author  Vladimir Roncevic <elektron.ronca@gmail.com>
@@ -11,8 +11,6 @@ UTIL_VERSION=ver.1.0
 UTIL=${UTIL_ROOT}/sh_util/${UTIL_VERSION}
 UTIL_LOG=${UTIL}/log
 
-.    ${UTIL}/bin/devel.sh
-.    ${UTIL}/bin/usage.sh
 .    ${UTIL}/bin/check_root.sh
 .    ${UTIL}/bin/check_tool.sh
 .    ${UTIL}/bin/logging.sh
@@ -23,7 +21,7 @@ UTIL_LOG=${UTIL}/log
 .    ${UTIL}/bin/display_logo.sh
 
 BUILD_STEP_TOOL=build_step
-BUILD_STEP_VERSION=ver.3.0
+BUILD_STEP_VERSION=ver.4.0
 BUILD_STEP_HOME=${UTIL_ROOT}/${BUILD_STEP_TOOL}/${BUILD_STEP_VERSION}
 BUILD_STEP_CFG=${BUILD_STEP_HOME}/conf/${BUILD_STEP_TOOL}.cfg
 BUILD_STEP_UTIL_CFG=${BUILD_STEP_HOME}/conf/${BUILD_STEP_TOOL}_util.cfg
@@ -51,6 +49,13 @@ declare -A PB_STRUCTURE=(
     [SLEEP]=0.01
 )
 
+declare -A BUILD_STEP_LOGO_DATA=(
+    [OWNER]="vroncevic"
+    [REPO]="${BUILD_STEP_TOOL}"
+    [VERSION]="${BUILD_STEP_VERSION}"
+    [LOGO]="${BUILD_STEP_LOGO}"
+)
+
 TOOL_DEBUG="false"
 TOOL_LOG="false"
 TOOL_NOTIFY="false"
@@ -73,7 +78,7 @@ TOOL_NOTIFY="false"
 function __build_step {
     local CF=$1 OF=$2
     if [[ -n "${CF}" && -n "${OF}" ]]; then
-        display_logo "vroncevic" "${BUILD_STEP_TOOL}" "${BUILD_STEP_VERSION}" "${BUILD_STEP_LOGO}"
+        display_logo BUILD_STEP_LOGO_DATA
         local FUNC=${FUNCNAME[0]} MSG="None"
         local STATUS_CONF STATUS_CONF_UTIL STATUS
         MSG="Loading basic and util configuration!"

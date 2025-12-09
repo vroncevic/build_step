@@ -36,11 +36,11 @@ Navigate to release **[page](https://github.com/vroncevic/build_step/releases)**
 To install **build_step** type the following
 
 ```bash
-tar xvzf build_step-3.0.tar.gz
-cd build_step-3.0
-cp -R ~/sh_tool/bin/   /root/scripts/build_step/ver.3.0/
-cp -R ~/sh_tool/conf/  /root/scripts/build_step/ver.3.0/
-cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.3.0/
+tar xvzf build_step-4.0.tar.gz
+cd build_step-4.0
+cp -R ~/sh_tool/bin/   /root/scripts/build_step/ver.4.0/
+cp -R ~/sh_tool/conf/  /root/scripts/build_step/ver.4.0/
+cp -R ~/sh_tool/log/   /root/scripts/build_step/ver.4.0/
 ```
 
 Self generated setup script and execution
@@ -57,7 +57,7 @@ Self generated setup script and execution
 [setup] create symbolic link of App/Tool/Script
 [setup] done
 
-/root/scripts/build_step/ver.3.0/
+/root/scripts/build_step/ver.4.0/
 ├── bin
 │   └── build_step.sh
 ├── conf
@@ -68,7 +68,7 @@ Self generated setup script and execution
     └── build_step.log
 
 4 directories, 5 files
-lrwxrwxrwx 1 root root 50 Dec  2 19:29 /root/bin/build_step -> /root/scripts/build_step/ver.3.0/bin/build_step.sh
+lrwxrwxrwx 1 root root 50 Dec  2 19:29 /root/bin/build_step -> /root/scripts/build_step/ver.4.0/bin/build_step.sh
 ```
 
 Or You can use docker to create image/container.
@@ -77,13 +77,13 @@ Or You can use docker to create image/container.
 
 ```bash
 # Create symlink for shell tool
-ln -s /root/scripts/build_step/ver.3.0/bin/build_step.sh /root/bin/build_step
+ln -s /root/scripts/build_step/ver.4.0/bin/build_step.sh /root/bin/build_step
 
 # Setting PATH
 export PATH=${PATH}:/root/bin/
 
 # Start analyze build products
-build_step ver.3.0
+build_step ver.4.0
 Tue Dec  2 07:30:18 PM CET 2025
 
 [check_root] Check permission for current session? [ok]
@@ -100,7 +100,7 @@ Tue Dec  2 07:30:18 PM CET 2025
   ░░░░░    ░░░░░░ ░░ ░░░  ░░░░░░ ░░░░░ ░░░░░░     ░░   ░░░░░░ ░██       
                                                               ░░        
 	                                           
-		Info   github.io/build_step ver.3.0 
+		Info   github.io/build_step ver.4.0 
 		Issue  github.io/issue
 		Author vroncevic.github.io
 
@@ -108,13 +108,13 @@ Tue Dec  2 07:30:18 PM CET 2025
 100% [================================================]
 
 [load_conf] Loading App/Tool/Script configuration!
-[check_cfg] Checking configuration file [/root/scripts/build_step/ver.3.0/conf/build_step.cfg] [ok]
+[check_cfg] Checking configuration file [/root/scripts/build_step/ver.4.0/conf/build_step.cfg] [ok]
 [check_cfg] Done
 
 [load_conf] Done
 
 [load_util_conf] Load module configuration!
-[check_cfg] Checking configuration file [/root/scripts/build_step/ver.3.0/conf/build_step_util.cfg] [ok]
+[check_cfg] Checking configuration file [/root/scripts/build_step/ver.4.0/conf/build_step_util.cfg] [ok]
 [check_cfg] Done
 
 [load_util_conf] Done
@@ -162,7 +162,7 @@ More documentation and info at
 
 ### Copyright and licence
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-4.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 Copyright (C) 2017 - 2026 by [vroncevic.github.io/build_step](https://vroncevic.github.io/build_step)
 
